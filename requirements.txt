@@ -1,9 +1,8 @@
 python-dotenv==0.15.0
 google-generativeai==0.7.1
 gunicorn==20.1.0
-Flask-Static-Digest
 Flask==1.1.4
+Flask-Static-Digest==0.4.1
 Werkzeug==1.0.1
-jinja2>=3.1.2
+jinja2<3.0
 markupsafe>=2.1.1
-
