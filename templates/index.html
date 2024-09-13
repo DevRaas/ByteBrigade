@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalo Chale Bharat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+ 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="hero-background.jpg">
+        </div>
+        <div class="hero-content">
+            <h1>Discover the Unseen</h1>
+            <p>"India's beauty is unparalleled, and there's so much more to explore.
+                Let's embark on a journey to discover the hidden gems "</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="section-1">
+        <h2>Welcome to Chalo Chale!</h2>
+        <p>Your gateway to the diverse experiences that India has to offer. Explore our travel blogs, food & culture, volunteering opportunities, and latest news. Get ready to immerse yourself in the richness of India!</p>
+        <button class="btn">Learn More</button>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="image-grid">
+        <div class="image-grid-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <!-- Add more images here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Stay connected with us to get the latest updates on travel experiences, tips, and more. 
+            Join our mailing list to stay in the loop!</p>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul class="social-media">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p>&copy; 2024 Chalo Chole . All rights reserved.</p>
+
+    </footer>
+
+        <button class="dark-mode-toggle">🌙</button> <!-- Button for dark mode toggle -->
+        <div class="chatbox" style="display: none;"> <!-- Hidden by default -->
+            <div class="chatbox__support">
+                <!-- Close button inside chatbox -->
+                <button class="chatbox__close-button">❌</button>
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Trip Advisor</h4>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <!-- Messages will be appended here -->
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Chatbot Toggle Button (visible by default) -->
+        <button class="popup-chatbox-toggle">
+            <img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" alt="Chat">
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
